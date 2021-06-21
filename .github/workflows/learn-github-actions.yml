@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: curl -d @${GITHUB_WORKSPACE}/test.json -H "Content-Type: application/json" -X POST https://tumgi3.free.beeceptor.com/test
+      - run: curl -d @${GITHUB_WORKSPACE}/test.json -H "Content-Type: application/json" -X POST "https://tumgi3.free.beeceptor.com/test"
