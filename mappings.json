@@ -1,0 +1,670 @@
+{
+  "things": [{
+      "name": "tumgis-testnode-swm-0126_outdoor",
+      "groupID": 99,
+      "DevEUI": "0023A86184D8519C",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 1,
+          "iotID": 1
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 2
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 3,
+          "iotID": 11
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 4,
+          "iotID": 12
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 5,
+          "iotID": 8
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 6,
+          "iotID": 7
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 7,
+          "iotID": 13
+        }
+      ]
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00DBE141CEEE729E",
+      "mappings": []
+    },
+    {
+      "name": "dimitrov_hristian_swm",
+      "groupID": 1,
+      "DevEUI": "00A4D204D98CD1B8",
+      "mappings": []
+    },
+    {
+      "name": "machnitzke_julian_swm",
+      "groupID": 1,
+      "DevEUI": "00ADE16A2B868351",
+      "mappings": []
+    },
+    {
+      "name": "gamarra_nicolas_swm",
+      "groupID": 0,
+      "DevEUI": "0009FDE4A6BBAB6C",
+      "mappings": []
+    },
+    {
+      "name": "ishaq_amr_swm",
+      "groupID": 0,
+      "DevEUI": "001E1071C7F11640",
+      "mappings": []
+    },
+    {
+      "name": "nguyen_hien_swm",
+      "groupID": 0,
+      "DevEUI": "00D2981B966FE2C6",
+      "mappings": []
+    },
+    {
+      "name": "dhungana_kushal_swm",
+      "groupID": 0,
+      "DevEUI": "0007430195411A6A",
+      "mappings": []
+    },
+    {
+      "name": "thekkekara_sebastian_thomas_swm",
+      "groupID": 0,
+      "DevEUI": "00F6A1B0AD9A24B8",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0064ECB6B5CE158C",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00462092496636A3",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0096D36FDA95B78C",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0044ABABB5C39836",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00AFD40DE5C177D0",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "001E45F26C1BB933",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0068BFFC9C146D7F",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "003579593BE50175",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0092D917589DC84D",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "002A862DA290C679",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 8,
+      "DevEUI": "005FD950519EBC37",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "001E576513563DB1",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00008B5D90961A98",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00B193384D6E47B8",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "005C04294CAF9BD9",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0046C67B1F5D1B48",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00173809A7E65055",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00B8D40148F3F02A",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "004A6F82D3313296",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "004F85D928E85BEC",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0065C5BE1B0EF4CF",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0009296F1A9F134F",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00876EA598282BF6",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00050513987DA80C",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0086E953F37FE67E",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00645044BFDCE22E",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00BE531888E7364F",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0069E463D34ECBBD",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00A2047520044506",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "004D8C4791C6F384",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "005D0958A179C21C",
+      "mappings": []
+    },
+    {
+      "name": "myHome",
+      "groupID": 99,
+      "DevEUI": "00F24776F61F0B0E",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 5,
+          "iotID": 4
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 3
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 4,
+          "iotID": 9
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 3,
+          "iotID": 10
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 1,
+          "iotID": 108
+        }
+      ]
+    },
+    {
+      "name": "dimitrov_hristian_ttn",
+      "groupID": 0,
+      "DevEUI": "0001509CCA8891B6",
+      "mappings": []
+    },
+    {
+      "name": "machnitzke_julian_ttn",
+      "groupID": 0,
+      "DevEUI": "00135DEC7A89E230",
+      "mappings": []
+    },
+    {
+      "name": "gamarra_nicolas_ttn",
+      "groupID": 0,
+      "DevEUI": "00CDD264489C3029",
+      "mappings": []
+    },
+    {
+      "name": "ishaq_amir_ttn",
+      "groupID": 0,
+      "DevEUI": "0087F8C42B706B89",
+      "mappings": []
+    },
+    {
+      "name": "nguyen_hien_ttn",
+      "groupID": 0,
+      "DevEUI": "00A31F100B916A7A",
+      "mappings": [{
+        "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+        "lppID": 1,
+        "iotID": 137
+      }]
+    },
+    {
+      "name": "dhungana_kushal_ttn",
+      "groupID": 0,
+      "DevEUI": "00B2501B97D9C882",
+      "mappings": []
+    },
+    {
+      "name": "thekkekara_sebastian_thomas_ttn",
+      "groupID": 0,
+      "DevEUI": "00C8961CA31504EB",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "000CC618DCAA8570",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0004C3A378039176",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "009A16756CD1F42A",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00C040FC8A80FD76",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0044ECBD97CA45FD",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00895FA71B10E8CB",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "004E3B4AD66DC1FF",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "005ACFEE46375C1A",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00960A1CB85107C7",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "008AAB55CE4CCAD7",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0026B2511F031053",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00107C4CBB69CC86",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "006A6476A9984A93",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00B5551E089D69B4",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0014109435B2B9A1",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00335BFE39AA2E30",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00D2A27366313022",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "005FEC6EBD8B0505",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "002EAF98D7A0393D",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00D73190D1EC8939",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0015184965E21E9D",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00025D116CA130FF",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "007A0126CF984B3B",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00E253D78A48275F",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0006A8182B8F7C90",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "0030D0B0A16EB632",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "003119779C2B1E8F",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00157C327CDFB101",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00B0BF4DFBBA2D35",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "00595782701FBDA4",
+      "mappings": []
+    },
+    {
+      "name": "theDeviceName",
+      "groupID": 0,
+      "DevEUI": "008090BF10939D68",
+      "mappings": []
+    },
+    {
+      "name": "tumgis-testnode-ttn-0126_indoor",
+      "groupID": 99,
+      "DevEUI": "00F9939402410A83",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 1,
+          "iotID": 5
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 6
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 3,
+          "iotID": 115
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 4,
+          "iotID": 116
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 5,
+          "iotID": 117
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 6,
+          "iotID": 118
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 7,
+          "iotID": 119
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 8,
+          "iotID": 136
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 9,
+          "iotID": 134
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 10,
+          "iotID": 135
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 11,
+          "iotID": 124
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 12,
+          "iotID": 125
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 13,
+          "iotID": 126
+        }
+      ]
+    },
+    {
+      "name": "NodeRED test package",
+      "groupID": 99,
+      "DevEUI": "TEST_EUI_F61F0B0E",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 1,
+          "iotID": 99
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 100
+        }
+      ]
+    },
+    {
+      "name": "NodeRED test package",
+      "groupID": 99,
+      "DevEUI": "TEST_EUI_vC_F0B0E",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 5,
+          "iotID": 99
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 100
+        }
+      ]
+    },
+    {
+      "name": "GPS test package",
+      "groupID": 99,
+      "DevEUI": "SWM_TEST_GPS_001E107",
+      "mappings": [{
+        "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+        "lppID": 1,
+        "iotID": 49
+      }]
+    },
+    {
+      "name": "migration testing",
+      "groupID": 99,
+      "DevEUI": "00806CEF11393781",
+      "mappings": [{
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 1,
+          "iotID": 138
+        },
+        {
+          "frostURL": "https://gi3.gis.lrg.tum.de/frost",
+          "lppID": 2,
+          "iotID": 139
+        }
+      ]
+    }
+  ]
+}
