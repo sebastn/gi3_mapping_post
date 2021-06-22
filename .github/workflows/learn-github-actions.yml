@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd "${GITHUB_WORKSPACE}"
-      - run: curl -d @test.json -H "Content-Type:application/json" -X POST "https://tumgi3.free.beeceptor.com/test"
+      - run: curl -d @mappings.json -H "Content-Type:application/json" -X POST "https://gi3.gis.lrg.tum.de/nodered/mappings"
