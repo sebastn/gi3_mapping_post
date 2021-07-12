@@ -1,0 +1,9 @@
+name: test-POST 
+on: [push]
+jobs:
+  post_file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd "${GITHUB_WORKSPACE}"
+      - run: curl -d @mappings.json -H "Content-Type:application/json" -X POST "https://gi3.gis.lrg.tum.de/nodered/mappings"
