@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Post mappings
-      - uses: actions/checkout@v2
-      - run: cd "${GITHUB_WORKSPACE}"
+#      - uses: actions/checkout@v2
+#      - run: cd "${GITHUB_WORKSPACE}"
       - uses: fjogeleit/http-request-action@master
       - with: 
           url: 'https://tumgi3.free.beeceptor.com/my/api/path'
