@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-      - uses: actions/checkout@v2
-      - run: cd "${GITHUB_WORKSPACE}"
+        uses: actions/checkout@v2
+        with: 
+          ref: ${{ github.workspace }}
       
       - name: Request action 
         uses: fjogeleit/http-request-action@master
