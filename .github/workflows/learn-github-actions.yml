@@ -4,13 +4,13 @@ jobs:
   post_mappings:
     runs-on: ubuntu-latest
     steps:
-      - name: Post mappings
-#      - uses: actions/checkout@v2
-#      - run: cd "${GITHUB_WORKSPACE}"
-      - id: myRequest 
-      - uses: fjogeleit/http-request-action@master
-      - with: 
+      - uses: actions/checkout@v2
+      
+      - name: Request action 
+        uses: fjogeleit/http-request-action@master
+        with: 
           url: 'https://tumgi3.free.beeceptor.com/my/api/path'
           method: 'POST'
-      - name: Show Response
-      - run: echo ${{ steps.myRequest.outputs.response }}
+          data: '{ "key": "value" }'
+      
+      - run: cd "${GITHUB_WORKSPACE}"
