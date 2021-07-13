@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-        with: 
-          ref: ${{ github.workspace }}
+#        with: 
+#          ref: ${{ github.workspace }}
       
       - name: Request action 
         uses: fjogeleit/http-request-action@master
