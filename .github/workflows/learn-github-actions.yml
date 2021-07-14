@@ -17,3 +17,4 @@ jobs:
           contentType: application/json
             #          data: '{ "key": "value" }'
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+            #
