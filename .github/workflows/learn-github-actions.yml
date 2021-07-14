@@ -11,14 +11,14 @@ jobs:
 #          ref: ${{ github.workspace }}
       
   post:
+    name: post mappings to nodered
+    needs: checkout
     runs-on: ubuntu-latest    
-        name: post mappings to nodered
-        needs: checkout
-        uses: fjogeleit/http-request-action@master
-        with: 
-          url: "https://tumgi3.free.beeceptor.com/my/api/path"
-            #url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
-          method: 'POST'
-          contentType: application/json
-          data: JSONdata
-            #files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+    uses: fjogeleit/http-request-action@master
+    with: 
+      url: "https://tumgi3.free.beeceptor.com/my/api/path"
+        #url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
+      method: 'POST'
+      contentType: application/json
+      data: JSONdata
+        #files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
