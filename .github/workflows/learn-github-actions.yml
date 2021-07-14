@@ -14,5 +14,5 @@ jobs:
             #url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
           contentType: application/json
-          data: ${{ github.workspace  }}/mappings.json
-            #files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+          data: 
+          files: ${{ github.workspace  }}/mappings.json
