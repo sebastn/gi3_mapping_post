@@ -15,4 +15,4 @@ jobs:
           url: 'https://tumgi3.free.beeceptor.com/my/api/path'
           method: 'POST'
             #          data: '{ "key": "value" }'
-          files: ./mappings.json
+          files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
