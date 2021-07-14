@@ -6,16 +6,9 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: store json to variable
-        run: |
-          JSONdata=$(cat ${{ github.workspace  }}/mappings.json | jq .)       
-          echo $JSONdata
-#        with: 
-#          ref: ${{ github.workspace }}
       
   post:
     name: post mappings to nodered
-    needs: checkout
     runs-on: ubuntu-latest    
     uses: fjogeleit/http-request-action@master
     with: 
@@ -23,5 +16,5 @@ jobs:
         #url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
       method: 'POST'
       contentType: application/json
-      data: JSONdata
+      data: '{ "file": "${{ github.workspace  }}/mappings.json" }'
         #files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
