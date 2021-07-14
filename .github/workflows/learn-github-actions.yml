@@ -10,6 +10,7 @@ jobs:
 #          ref: ${{ github.workspace }}
       
       - name: Request action 
+        needs: checkout
         uses: fjogeleit/http-request-action@master
         with: 
           url: 'https://tumgi3.free.beeceptor.com/my/api/path'
