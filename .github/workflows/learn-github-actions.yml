@@ -12,7 +12,7 @@ jobs:
       
   post:
     runs-on: ubuntu-latest    
-      - name: post mappings to node-red
+      - name: post mappings to nodered
         needs: checkout
         uses: fjogeleit/http-request-action@master
         with: 
