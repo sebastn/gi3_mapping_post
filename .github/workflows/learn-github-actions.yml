@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: store json to variable
         run: JSONdata=$(cat ./mappings.json | jq .)       
 #        with: 
 #          ref: ${{ github.workspace }}
