@@ -12,9 +12,8 @@ jobs:
       - name: Request action 
         uses: fjogeleit/http-request-action@master
         with: 
-          url: "https://gi3.gis.lrg.tum.de/nodered/mappingstest"
+          url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
           contentType: application/json
             #          data: '{ "key": "value" }'
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
-            #
