@@ -15,4 +15,4 @@ jobs:
           method: 'POST'
           contentType: application/json
           data: 
-          files: ${{ github.workspace  }}/mappings.json
+          files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
