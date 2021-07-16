@@ -19,9 +19,8 @@ jobs:
     steps:
     - name: step two
       run: |
-          MAPPING_JSON=$(cat ./mappings.json | jq .)
+          MAPPING_JSON=$(cat ${{ github.workspace  }}/mappings.json } | jq .)
           echo $MAPPING_JSON
-          printenv
   
   post_mapping:
     runs-on: ubuntu-latest
