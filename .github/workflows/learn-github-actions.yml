@@ -15,7 +15,8 @@ jobs:
       - name: store variable  
         run: |
               MAPPING_JSON=$(cat ./mappings.json | jq .)
-              #echo $MAPPING_JSON
+              echo $MAPPING_JSON
+              printenv
               
       - name: post mapping      
         uses: fjogeleit/http-request-action@master
