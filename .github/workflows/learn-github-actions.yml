@@ -6,19 +6,26 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      
-      - name: set environment variables
-        uses: allenevans/set-env@v2.0.0
-        with:
-          MAPPING_JSON: ""
-          
-      - name: store variable  
-        run: |
-              MAPPING_JSON=$(cat ./mappings.json | jq .)
-              echo $MAPPING_JSON
-              printenv
-              
-      - name: post mapping      
+  
+  set_env:
+  - name: set environment variables
+    runs-on: ubuntu-latest
+    uses: allenevans/set-env@v2.0.0
+    with:
+      MAPPING_JSON: ""
+  
+  store_mapping:
+  - name: store variable
+    runs-on: ubuntu-latest
+    needs: [set_env]
+    run: |
+          MAPPING_JSON=$(cat ./mappings.json | jq .)
+          echo $MAPPING_JSON
+          printenv
+  
+  post_mapping:
+  - name: post mapping
+    runs-on: ubuntu-latest
         uses: fjogeleit/http-request-action@master
         with: 
           #url: "https://tumgi3.free.beeceptor.com/my/api/path"
@@ -28,7 +35,10 @@ jobs:
           data: 
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
                
-      - name: Test step
-        run: |
-              echo $MAPPING_JSON
-              printenv
+  test_job:             
+  - name: Test step
+    runs-on: ubuntu-latest
+    needs: [set_env, store_mapping]
+    run: |
+          echo $MAPPING_JSON
+          printenv
