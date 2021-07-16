@@ -26,14 +26,14 @@ jobs:
   post_mapping:
   - name: post mapping
     runs-on: ubuntu-latest
-        uses: fjogeleit/http-request-action@master
-        with: 
-          #url: "https://tumgi3.free.beeceptor.com/my/api/path"
-          url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
-          method: 'POST'
-            #contentType: application/json
-          data: 
-          files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+    uses: fjogeleit/http-request-action@master
+    with: 
+      #url: "https://tumgi3.free.beeceptor.com/my/api/path"
+      url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
+      method: 'POST'
+        #contentType: application/json
+      data: 
+      files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
                
   test_job:             
   - name: Test step
