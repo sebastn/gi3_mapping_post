@@ -20,6 +20,7 @@ jobs:
     - name: step two
       run: |
           echo $GITHUB_WORKSPACE
+          ls $GITHUB_WORKSPACE
           MAPPING_JSON=$(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
           echo $MAPPING_JSON
   
