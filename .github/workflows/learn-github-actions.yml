@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+        run: JSON=$(cat ./mappings.json | jq .)  
       
       - name: post mapping      
         uses: fjogeleit/http-request-action@master
@@ -16,3 +17,6 @@ jobs:
             #contentType: application/json
           data: 
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+      - name: Test step
+        run: echo $JSON
+        
