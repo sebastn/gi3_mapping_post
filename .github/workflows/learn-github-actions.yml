@@ -6,11 +6,16 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-        
+      
+      - name: set environment variables
+        uses: allenevans/set-env@v2.0.0
+        with:
+          MAPPING_JSON: ""
+          
       - name: store variable  
         run: |
-              JSON=$(cat ./mappings.json | jq .)
-              echo $JSON
+              MAPPING_JSON=$(cat ./mappings.json | jq .)
+              echo $MAPPING_JSON
               
       - name: post mapping      
         uses: fjogeleit/http-request-action@master
@@ -21,7 +26,6 @@ jobs:
             #contentType: application/json
           data: 
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
-          
+               
       - name: Test step
-        run: echo $JSON
-        
+        run: echo $MAPPING_JSON
