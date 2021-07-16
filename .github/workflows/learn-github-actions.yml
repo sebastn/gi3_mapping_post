@@ -33,7 +33,7 @@ jobs:
         url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
         method: 'POST'
         #contentType: application/json
-        data: {}
+        data: '{}'
         files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
                
   test_job:             
