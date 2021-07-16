@@ -15,7 +15,7 @@ jobs:
       - name: store variable  
         run: |
               MAPPING_JSON=$(cat ./mappings.json | jq .)
-              echo $MAPPING_JSON
+              #echo $MAPPING_JSON
               
       - name: post mapping      
         uses: fjogeleit/http-request-action@master
@@ -28,4 +28,6 @@ jobs:
           files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
                
       - name: Test step
-        run: echo $MAPPING_JSON
+        run: |
+              echo $MAPPING_JSON
+              printenv
