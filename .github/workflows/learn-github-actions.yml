@@ -8,8 +8,10 @@ jobs:
         uses: actions/checkout@v2
         
       - name: store variable  
-        run: JSON=$(cat ./mappings.json | jq .)  
-      
+        run: |
+              JSON=$(cat ./mappings.json | jq .)
+              echo $JSON
+              
       - name: post mapping      
         uses: fjogeleit/http-request-action@master
         with: 
