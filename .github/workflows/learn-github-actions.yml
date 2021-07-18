@@ -6,14 +6,25 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+<<<<<<< HEAD
       
       - name: checkout repo
         uses: actions/checkout@v2
+=======
+    
+      - name: set global variable
+        id: step_one
+        run: echo "mapping_json=temp" >> $GITHUB_ENV
+>>>>>>> a2fdc756a1a1475524f710d78a73c9dd3ab0edc8
         
-      - name: set environment variables
-        uses: allenevans/set-env@v2.0.0
-        with:
-          MAPPING_JSON: 'start'
+      - name: test global variable
+        id: step_two
+        run: echo "${{ env.mapping_json }}"
+        
+#      - name: set environment variables
+#        uses: allenevans/set-env@v2.0.0
+#        with:
+#          MAPPING_JSON: 'start'
       
   store_mapping:
     name: store variable
@@ -22,12 +33,15 @@ jobs:
     steps:
     - name: step two
       run: |
+<<<<<<< HEAD
           ls -ltr
           echo $GITHUB_WORKSPACE
+=======
+          cat $GITHUB_WORKSPACE/mappings,json
+>>>>>>> a2fdc756a1a1475524f710d78a73c9dd3ab0edc8
           ls $GITHUB_WORKSPACE
-          MAPPING_JSON=$(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
-          echo $MAPPING_JSON
-  
+          echo ${{ env.mapping_json }}
+#          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
   post_mapping:
     runs-on: ubuntu-latest
     steps:
