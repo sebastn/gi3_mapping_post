@@ -27,11 +27,10 @@ jobs:
     steps:
     - name: step two
       run: |
-          echo $GITHUB_WORKSPACE
+          cat $GITHUB_WORKSPACE/mappings,json
           ls $GITHUB_WORKSPACE
-          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
           echo ${{ env.mapping_json }}
-  
+#          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
   post_mapping:
     runs-on: ubuntu-latest
     steps:
