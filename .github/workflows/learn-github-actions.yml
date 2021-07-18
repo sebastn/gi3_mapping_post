@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      
+      - name: checkout repo
+        uses: actions/checkout@v2
         
       - name: set environment variables
         uses: allenevans/set-env@v2.0.0
@@ -19,6 +22,7 @@ jobs:
     steps:
     - name: step two
       run: |
+          ls -ltr
           echo $GITHUB_WORKSPACE
           ls $GITHUB_WORKSPACE
           MAPPING_JSON=$(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
