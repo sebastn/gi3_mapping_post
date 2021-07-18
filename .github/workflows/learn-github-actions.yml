@@ -4,6 +4,9 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+    
       - name: set global variable
         id: step_one
         run: echo "mapping_json=temp" >> $GITHUB_ENV
