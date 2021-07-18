@@ -27,7 +27,8 @@ jobs:
     steps:
     - name: step two
       run: |
-          cat $GITHUB_WORKSPACE/mappings,json
+          ls -ltr
+          cat $GITHUB_WORKSPACE/mappings.json
           ls $GITHUB_WORKSPACE
           echo ${{ env.mapping_json }}
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
