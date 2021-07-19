@@ -8,10 +8,6 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-    
-     # - name: set global variable
-      #  id: step_one
-        #run: echo "mapping_json=temp" >> $GITHUB_ENV
         
       - name: test global variable
         id: step_two
@@ -29,10 +25,11 @@ jobs:
     steps:
     - name: step two
       run: |
+          pwd
           ls -ltr
-          cat $GITHUB_WORKSPACE/mappings.json
           ls $GITHUB_WORKSPACE
           echo ${{ env.mapping_json }}
+#          cat $GITHUB_WORKSPACE/mappings.json
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
   post_mapping:
     runs-on: ubuntu-latest
