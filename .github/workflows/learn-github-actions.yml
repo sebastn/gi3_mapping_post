@@ -9,8 +9,8 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
     
-      - name: set global variable
-        id: step_one
+     # - name: set global variable
+      #  id: step_one
         #run: echo "mapping_json=temp" >> $GITHUB_ENV
         
       - name: test global variable
