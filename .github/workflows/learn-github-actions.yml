@@ -11,8 +11,10 @@ jobs:
         
       - name: test global variable
         id: step_two
-        run: echo "${{ env.mapping_json }}"
-        
+        run: |
+            echo "${{ env.mapping_json }}"
+            ls /home/runner/work/gi3_mapping_post/gi3_mapping_post/
+            ls /home/runner/work/gi3_mapping_post/
 #      - name: set environment variables
 #        uses: allenevans/set-env@v2.0.0
 #        with:
@@ -27,7 +29,6 @@ jobs:
       run: |
           pwd
           ls -ltr
-          ls /home/runner/work/gi3_mapping_post/gi3_mapping_post/
           echo ${{ env.mapping_json }}
           cat @mappings.json
 #          cat $GITHUB_WORKSPACE/mappings.json
