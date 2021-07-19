@@ -29,6 +29,7 @@ jobs:
           ls -ltr
           ls /home/runner/work/gi3_mapping_post/gi3_mapping_post/
           echo ${{ env.mapping_json }}
+          cat @mappings.json
 #          cat $GITHUB_WORKSPACE/mappings.json
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
   post_mapping:
