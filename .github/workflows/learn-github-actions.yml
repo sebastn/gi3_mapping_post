@@ -13,7 +13,7 @@ jobs:
         id: step_two
         run: |
             echo "${{ env.mapping_json }}"
-            mapping_json = cat /home/runner/work/gi3_mapping_post/gi3_mapping_post/mappings.json
+            env.mapping_json = cat /home/runner/work/gi3_mapping_post/gi3_mapping_post/mappings.json
             echo $mapping_json
 #      - name: set environment variables
 #        uses: allenevans/set-env@v2.0.0
