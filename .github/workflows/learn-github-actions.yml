@@ -2,7 +2,7 @@ name: test-POST
 on: [push]
 env:
 #  mapping_json: $((cat ./mappings.json) 2>&1)
-  mapping_json: 'temporar'
+#  mapping_json: 'temporar'
 jobs:
   checkout:
     runs-on: ubuntu-latest
@@ -12,7 +12,9 @@ jobs:
         
       - name: step_two
         run: |
-            echo ${{ env.mapping_json }}
+          echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" >> $GITHUB_ENV
+
+#            echo ${{ env.mapping_json }}
           
       - name: post mapping
         uses: fjogeleit/http-request-action@master
@@ -21,7 +23,7 @@ jobs:
    #       url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
 #          data: $(cat ./mappings.json)
-          data: ${{ env.mapping_json }}
+          data: ${{ env.MAPPING_JSON }}
 
    #       files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
           #contentType: application/json
