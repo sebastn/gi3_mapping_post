@@ -12,9 +12,7 @@ jobs:
       - name: step_two
         run: |
             echo ${{ env.mapping_json }}
-            ${{ env.mapping_json }} = cat ./mappings.json
-            echo ${{ env.mapping_json }}
-            
+          
       - name: post mapping
         uses: fjogeleit/http-request-action@master
         with: 
