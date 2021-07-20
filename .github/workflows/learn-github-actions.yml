@@ -19,15 +19,18 @@ jobs:
 #        uses: allenevans/set-env@v2.0.0
 #        with:
 #          MAPPING_JSON: 'start'
+      - name: step_three
+        run: |
+            echo ${{ env.mapping_json }}
       
-  store_mapping:
-    name: store variable
-    runs-on: ubuntu-latest
-    needs: [checkout]
-    steps:
-    - name: step two
-      run: |
-          echo ${{ env.mapping_json }}
+#  store_mapping:
+#    name: store variable
+#    runs-on: ubuntu-latest
+#    needs: [checkout]
+#    steps:
+#    - name: step two
+#      run: |
+#          echo ${{ env.mapping_json }}
 #          cat @mappings.json
 #          cat $GITHUB_WORKSPACE/mappings.json
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
