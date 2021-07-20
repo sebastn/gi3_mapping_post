@@ -46,9 +46,9 @@ jobs:
 #          cat @mappings.json
 #          cat $GITHUB_WORKSPACE/mappings.json
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
-  post_mapping:
-    runs-on: ubuntu-latest
-    steps:
+#  post_mapping:
+#    runs-on: ubuntu-latest
+#    steps:
 
 
                
