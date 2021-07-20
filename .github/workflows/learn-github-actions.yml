@@ -1,6 +1,6 @@
 name: test-POST 
 on: [push]
-env:
+#env:
 #  mapping_json: $((cat ./mappings.json) 2>&1)
 #  mapping_json: 'temporar'
 jobs:
