@@ -12,9 +12,9 @@ jobs:
       - name: test global variable
         id: step_two
         run: |
-            echo "${{ env.mapping_json }}"
-            cat ./mappings.json
             echo $mapping_json
+#            echo "${{ env.mapping_json }}"
+#            cat ./mappings.json
 #      - name: set environment variables
 #        uses: allenevans/set-env@v2.0.0
 #        with:
@@ -27,10 +27,8 @@ jobs:
     steps:
     - name: step two
       run: |
-          pwd
-          ls -ltr
           echo ${{ env.mapping_json }}
-          cat @mappings.json
+#          cat @mappings.json
 #          cat $GITHUB_WORKSPACE/mappings.json
 #          ${{ env.mapping_json }} = $(cat ${GITHUB_WORKSPACE}/mappings.json | jq .)
   post_mapping:
@@ -42,10 +40,11 @@ jobs:
         #url: "https://tumgi3.free.beeceptor.com/my/api/path"
         url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
         method: 'POST'
+        data: ${{ env.mapping_json }}
+        files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
         #contentType: application/json
 #        data: ${{ env.mapping_json }}
-        data: '{ "key": "value" }'
-        files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
+
                
 #  test_job:             
 #    runs-on: ubuntu-latest
