@@ -1,7 +1,8 @@
 name: test-POST 
 on: [push]
 env:
-  mapping_json: $((cat ./mappings.json) 2>&1)
+#  mapping_json: $((cat ./mappings.json) 2>&1)
+  mapping_json: 'temporar'
 jobs:
   checkout:
     runs-on: ubuntu-latest
@@ -19,8 +20,8 @@ jobs:
           url: "https://tumgi3.free.beeceptor.com/my/api/path"
    #       url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
-          data: $(cat ./mappings.json)
-#          data: ${{ env.mapping_json }}
+#          data: $(cat ./mappings.json)
+          data: ${{ env.mapping_json }}
 
    #       files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
           #contentType: application/json
