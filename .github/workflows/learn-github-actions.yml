@@ -19,7 +19,7 @@ jobs:
           url: "https://tumgi3.free.beeceptor.com/my/api/path"
    #       url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
-          data: ./mappings.json
+          data: $(cat ./mappings.json)
 #          data: ${{ env.mapping_json }}
 
    #       files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
