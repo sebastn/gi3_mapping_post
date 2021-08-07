@@ -15,7 +15,12 @@ jobs:
           echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" >> $GITHUB_ENV
 
 #            echo ${{ env.mapping_json }}
-          
+      - name: Export variable for next jobs
+        uses: UnlyEd/github-action-store-variable@v2.1.0 # See https://github.com/UnlyEd/github-action-store-variable
+        with:
+          # Persist (store) our MAGIC_NUMBER ENV variable into our store, for the next jobs
+          variables: |
+            MAPPING_JSON=${{ env.MAGIC_NUMBER}}          
       - name: post mapping
         uses: fjogeleit/http-request-action@master
         with: 
