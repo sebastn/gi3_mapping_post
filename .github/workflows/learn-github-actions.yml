@@ -18,8 +18,8 @@ jobs:
       - name: post mapping
         uses: fjogeleit/http-request-action@master
         with: 
-          url: "https://tumgi3.free.beeceptor.com/my/api/path"
-            # url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
+          #url: "https://tumgi3.free.beeceptor.com/my/api/path"
+          url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
             #data: ${{ env.MAPPING_JSON }}
  #        This form of referencing should ideally work but for some reason, the data field is not evening showing up in the logs  
