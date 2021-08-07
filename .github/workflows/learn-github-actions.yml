@@ -28,7 +28,7 @@ jobs:
       
       - name: step_three
         run: |
-          echo ${{ env.MAPPING_JSON }}
+          echo "This is mapping ${{ env.MAPPING_JSON }}"
 
 
    #       files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
