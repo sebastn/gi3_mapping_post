@@ -23,4 +23,5 @@ jobs:
           method: 'POST'
             #data: ${{ env.MAPPING_JSON }}
  #        This form of referencing should ideally work but for some reason, the data field is not evening showing up in the logs  
-          files: ${GITHUB_WORKSPACE}/mappings.json  
+          contentType: application/json
+          files: '{ "file": "./mappings.json" }'
