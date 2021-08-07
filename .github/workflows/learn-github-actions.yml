@@ -12,15 +12,11 @@ jobs:
         
       - name: step_two
         run: |
-          echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" >> $GITHUB_ENV
-
+          # echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" >> $GITHUB_ENV
+          echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" 
+          cat $MAPPING_JSON
 #            echo ${{ env.mapping_json }}
-      - name: Export variable for next jobs
-        uses: UnlyEd/github-action-store-variable@v2.1.0 # See https://github.com/UnlyEd/github-action-store-variable
-        with:
-          # Persist (store) our MAGIC_NUMBER ENV variable into our store, for the next jobs
-          variables: |
-            MAPPING_JSON=${{ env.MAPPING_JSON}}          
+
       - name: post mapping
         uses: fjogeleit/http-request-action@master
         with: 
@@ -28,7 +24,7 @@ jobs:
    #       url: "https://gi3.gis.lrg.tum.de/nodered/mappings"
           method: 'POST'
 #          data: $(cat ./mappings.json)
-          data: ${{ env.MAPPING_JSON }}
+          data: $MAPPING_JSON
 
    #       files: '{ "file": "${{ github.workspace  }}/mappings.json" }'
           #contentType: application/json
