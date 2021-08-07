@@ -12,7 +12,6 @@ jobs:
         
       - name: step_two
         run: |
-          # echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" >> $GITHUB_ENV
           echo "MAPPING_JSON=$((cat ./mappings.json) 2>&1)" 
           cat $MAPPING_JSON
 #            echo ${{ env.mapping_json }}
