@@ -20,7 +20,7 @@ jobs:
         with:
           # Persist (store) our MAGIC_NUMBER ENV variable into our store, for the next jobs
           variables: |
-            MAPPING_JSON=${{ env.MAGIC_NUMBER}}          
+            MAPPING_JSON=${{ env.MAPPING_JSON}}          
       - name: post mapping
         uses: fjogeleit/http-request-action@master
         with: 
